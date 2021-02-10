@@ -24,7 +24,7 @@ int main()
         // Echo the input, check that printAllCharacters still outputs every character
         std::cout << "Input is : ";
         myParser.printAllCharacters();//<--- USES CHAR_ITERATOR
-        std::cout << std::endl;
+        //std::cout << std::endl;
 
         // Using std::find_if to check basic iterator behavior
         auto a = std::find_if(myParser.begin(), myParser.end(), [](char c) {return c == 'A'; });

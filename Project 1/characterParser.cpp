@@ -77,12 +77,6 @@ characterParser::charIterator characterParser::end2()
 // Requires modification after the default iterator has been changed
 void characterParser::printAllCharacters()
 {
-    //this->begin2();
-
-    //auto mycount = std::count(this->begin2(), this->end2(), 'w');
-    
-    //std::cout << mycount;
-
     /*
     for (char c : *this)
     {
@@ -97,7 +91,7 @@ void characterParser::printAllCharacters()
         const char c = *it; 
         std::cout << c; 
     }
-
+    std::cout << std::endl;
 }
 
 
