@@ -23,18 +23,16 @@ private:
     int length;
 
 public:
+
     // Default constructor
-    //
     // Constructs an empty string
     characterParser();
 
-    // Parametrized constructor
-    //
-    //  Builds a characterParser deep copied from a char *
+    //Parametrized constructor
+    //Builds a characterParser deep copied from a char *
     characterParser(char* str);
 
     // Parametrized constructor
-    //
     //  Builds a characterParser deep copied from a std::string
     characterParser(std::string str);
 
@@ -45,20 +43,20 @@ public:
     class acronymIterator;
 
 
-    // begin()
-    //
-    //  Returns an charIterator pointing to the first element of the string.
-    charIterator begin();
+    //begin()
+    //Returns an charIterator pointing to the first element of the string.
+    acronymIterator begin();
 
-    // end()
-    //
-    //  Returns an charIterator pointing "after" the last element of the string.
-    charIterator end();
+    //end()
+    //Returns an charIterator pointing "after" the last element of the string.
+    acronymIterator end();
 
-    // printAllCharacters()
-    //
-    //  Sends all the characters in the CharacterParser container to standard input in order
-    //  Adds a new line at the end of the output
+    charIterator begin2();
+    charIterator end2();
+
+    //printAllCharacters()
+    //Sends all the characters in the CharacterParser container to standard input in order
+    //Adds a new line at the end of the output
     void printAllCharacters();
 
 };

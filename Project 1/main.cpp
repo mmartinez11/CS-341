@@ -11,16 +11,20 @@
 // Do not modify main at all
 int main()
 {
+    //String to store the variable
     std::string s;
+
     // reads one line at a time until no input is provided (pressing enter on an empty line, or EOF if input is piped in)
     while (std::getline(std::cin, s) && (s.length() > 0))
     {
+        
         // Create a character parser object from one line of input
         characterParser myParser(s);
 
         // Echo the input, check that printAllCharacters still outputs every character
         std::cout << "Input is : ";
-        myParser.printAllCharacters();
+        myParser.printAllCharacters();//<--- USES CHAR_ITERATOR
+        std::cout << std::endl;
 
         // Using std::find_if to check basic iterator behavior
         auto a = std::find_if(myParser.begin(), myParser.end(), [](char c) {return c == 'A'; });
@@ -42,7 +46,7 @@ int main()
         std::cout << "There are " << c << " vowels in the acronym" << std::endl;
 
         // Use the new acronymIterator to output the acronym
-        std::cout << "Input as Acronym : ";
+        std::cout << "Input as Acronym: ";
         for (char c : myParser)
         {
             std::cout << c;
