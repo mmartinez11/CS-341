@@ -46,13 +46,13 @@ characterParser::acronymIterator& characterParser::acronymIterator::operator++()
 
     while(x != 0)
     {   //Check for special characters
-        if(*curr == ' ' || *curr == '(' || *curr == ')' || *curr == '"'){
+        if(*curr == ' ' || *curr == '(' || *curr == '"'){
 
             ++curr;
             y = (int)*curr;
             
             //check if the following charecter is valid
-            if(*curr != ' ' && *curr != '(' && *curr != ')' && *curr != '"'){
+            if(*curr != ' ' && *curr != '(' && *curr != '"'){
 
                 if((y > 64 && y < 91) || (y > 96 && y < 123))
                 {
