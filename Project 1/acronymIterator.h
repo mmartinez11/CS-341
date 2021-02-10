@@ -1,7 +1,7 @@
 //
 // Project 1
 // CS 341 Spring 2021
-// << Your Name Here >>
+// <<Manuel M Martinez>>
 //
 //Populate this file with the functions definitions for the acronymIterator class
 

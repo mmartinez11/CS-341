@@ -1,7 +1,7 @@
 //
 // Project 1
 // CS 341 Spring 2021
-// << Your Name Here >>
+// <<Manuel M Martinez>>
 //
 // The header file for the characterParser class, a collection of characters
 // This class comes with an iterator provided, charIterator
@@ -51,6 +51,7 @@ public:
     //Returns an charIterator pointing "after" the last element of the string.
     acronymIterator end();
 
+    //Declare Iterators using charIterator
     charIterator begin2();
     charIterator end2();
 

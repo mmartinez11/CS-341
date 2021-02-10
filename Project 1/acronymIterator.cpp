@@ -7,32 +7,31 @@
 #include <ctype.h>
 #include "acronymIterator.h"
 
+//When (.begin) is called it will return the first valid char 
 characterParser::acronymIterator::acronymIterator(char* arr)
 {
     curr = arr;
 
+    //Makes sure that the array is not out of bounds
     int x = (int)*curr;
 
-    while(x != 0)
-    {
-        if(x < 65 || x > 122)
-        {
+    //While loop will look for the first valid char in the string
+    while(x != 0){
+
+        if(x < 65 || x > 122){
             ++curr;
         }
-        else if(x > 90 && x < 97)
-        {
+        else if(x > 90 && x < 97){
             ++curr;
         }
-        else
-        {
+        else{
             break;
         }
-
         x = (int)*curr;
     }
-
 }
 
+//When iterator is dereferenced it returns an upper case char
 char& characterParser::acronymIterator::operator*()
 {
     *curr = toupper(*curr);
@@ -41,29 +40,30 @@ char& characterParser::acronymIterator::operator*()
 
 characterParser::acronymIterator& characterParser::acronymIterator::operator++()
 {
+    //Check that the value is not out of bounds
     int x = (int)*curr;
     int y = -99;
 
     while(x != 0)
-    {   
-        if(*curr == ' ' || *curr == '(' || *curr == ')' || *curr == '"')
-        {
+    {   //Check for special characters
+        if(*curr == ' ' || *curr == '(' || *curr == ')' || *curr == '"'){
+
             ++curr;
             y = (int)*curr;
             
-            if(*curr != ' ' && *curr != '(' && *curr != ')' && *curr != '"')
-            {
+            //check if the following charecter is valid
+            if(*curr != ' ' && *curr != '(' && *curr != ')' && *curr != '"'){
+
                 if((y > 64 && y < 91) || (y > 96 && y < 123))
                 {
                     --curr;
                     break;
                 }
             }
-
             --curr;
         }
-
         ++curr;
+        //Check value is not out of bounds
         x = (int)*curr;
         if(x == 0)
         {
@@ -72,6 +72,7 @@ characterParser::acronymIterator& characterParser::acronymIterator::operator++()
         }
     }
 
+    //Return valid value
     ++curr;
     return *this;
 }
