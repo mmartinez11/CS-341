@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ml89LZhVjkSAYB8M+7nd+1NrlvvdZHZvnq/BJHreKI7k/wQ9vIlWkUTx+BeseO0LiakOhSu9sbwiaF1ZuH1CmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\manny\\Desktop\\Spring 2021\\341\\Homework\\Homework3\\Homework3\\Homework3.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manny\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
