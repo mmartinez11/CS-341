@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4v3LW5MqaK62Kwt+0a9EFR1xzJr3+V43OxKscnwVq3FLJdO8FOL4wLxvI3/ksaAJwI0c67hqushCKTI5hsqOdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\manny\\Desktop\\Spring 2021\\341\\Projects\\Project 3\\Project 3\\Project 3\\Project 3.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manny\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\manny\\.nuget\\packages\\fsharp.data\\4.0.1\\fsharp.data.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

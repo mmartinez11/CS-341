@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Project02_utils.fs" />
+    <Compile Include="Project02_01.fs" />
+    <Compile Include="Project02_02.fs" />
+    <Compile Include="Project02_03.fs" />
+    <Compile Include="Project02_04.fs" />
+    <Compile Include="Project02_05.fs" />
+    <Compile Include="Project02_06.fs" />
+    <Compile Include="Project02_07.fs" />
+    <Compile Include="Project02_08.fs" />
+    <Compile Include="Project02_09.fs" />
+    <Compile Include="Project02_10.fs" />
+    <Compile Include="Project02_11.fs" />
+    <Compile Include="Project02_12.fs" />
+    <Compile Include="Project02_13.fs" />
+    <Compile Include="Project02_14.fs" />
+    <Compile Include="Project02_15.fs" />
+    <Compile Include="Project02_16.fs" />
+    <Compile Include="Project02_17.fs" />
+    <Compile Include="Project02_18.fs" />
+    <Compile Include="Project02_19.fs" />
+    <Compile Include="Project02_20.fs" />
+    <Compile Include="Project02_ALL.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

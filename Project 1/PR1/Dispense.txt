@@ -1,0 +1,49 @@
+"Words" (phrases) may "contain" 3 or more Other :characters.
+
+("*def -> A
+
+curr = arr;
+
+    //Makes sure that the array is not out of bounds
+    int x = (int)*curr;
+
+    //While loop will look for the first valid char in the string
+    while(x != 0){
+
+        if(x < 65 || x > 122){
+            ++curr;
+        }
+        else if(x > 90 && x < 97){
+            ++curr;
+        }
+        else{
+            break;
+        }
+        x = (int)*curr;
+    }
+
+
+curr = arr;
+
+    //Makes sure that the array is not out of bounds
+    int x = (int)*curr;
+    int y = -99;
+
+    //While loop will look for the first valid char in the string
+    while(x != 0){
+
+        if((x > 64 && x < 91) || (x > 96 && x < 123))
+        {   
+            --curr;
+            y = (int)*curr;
+
+            if(*curr == ' ' || *curr == '(' || *curr == ')' || *curr == '"' || y == 0)
+            {
+                ++curr;
+                break;
+            }
+            ++curr;
+        }
+        ++curr;
+        x = (int)*curr;
+    }
